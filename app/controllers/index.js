@@ -357,8 +357,8 @@ function setRequestHeaders(http) {
 	//http.setRequestHeader("Accept", acceptHeader);
 
 	http.setRequestHeader("Authorization", "Bearer "+ TOKEN);
-	//http.setRequestHeader("Content-Type", "application/json");
 	http.setRequestHeader("Content-Type", "audio/wav");
+	http.setRequestHeader("Transfer-encoding", "chunked");
 }
 
 
